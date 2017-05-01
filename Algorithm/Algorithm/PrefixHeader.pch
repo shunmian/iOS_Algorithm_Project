@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  Algorithm
+//
+//  Created by LAL on 17/3/25.
+//  Copyright © 2017年 LAL. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "ColorStore.h"
+#import "UIView+StringTagAdditions.h"
+#import "MathStats.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "Masonry.h"
+#import "StdIn.h"
+#import "GlobalConstant.h"
+
+#endif /* PrefixHeader_pch */
